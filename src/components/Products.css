@@ -1,0 +1,127 @@
+.products-section {
+     padding: 40px 20px;
+    text-align: center; 
+  }
+  
+  .products-section h2 {
+    font-family: Google Sans;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+
+    color: rgba(49, 84, 109, 1);
+
+  }
+
+  .scroll-line {
+    width: 100px; /* Width of the line */
+    height: 5px; /* Height of the line */
+    background-color: rgba(242, 242, 242, 1); /* Color of the line */
+    margin: 0 auto 20px auto; /* Center align and add bottom margin */
+    border-radius: 5px; /* Optional: rounded corners */
+  }
+  
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 products per row */
+    gap: 20px; /* Space between products */
+    justify-items: center; /* Center align items horizontally */
+  }
+  
+  .product-card {
+    width: 180px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .product-card img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+  }
+  
+  .product-card p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .buy-now {
+    background-color:rgba(255, 255, 255, 1);
+    ;
+    color: (90deg, #75CCEB 0%, #6FB4FF 100%);
+    ;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .buy-now:hover {
+    background-color: #00796b;
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .view-all{
+    width: 134px;
+height: 48px;
+top: 2038px;
+left: 653px;
+gap: 0px;
+border-radius: 18px 18px 18px 18px;
+border: 2px 0px 0px 0px;
+opacity: 0px;
+color: (90deg, #75CCEB 0%, #6FB4FF 100%);
+cursor: pointer;
+border: none;
+border: 2px solid;
+background-color:rgba(255, 255, 255, 1);
+border-image-source: linear-gradient(90deg, #75CCEB 0%, #6FB4FF 100%);
+
+
+  }
+
+  .view-all:hover {
+    background-color: #6dc1b7;
+  }
+
+  .scroll-down{
+    z-index: 1; /* Ensure this image is on top */
+  }
+
+  .filter-dropdown {
+    display: flex;
+    align-items: center; /* Center align label and select */
+    margin: 20px; /* Adjust margin as needed */
+}
+
+label {
+    margin-right: 10px; /* Space between label and dropdown */
+    font-size: 16px; /* Font size for the label */
+}
+
+select {
+    padding: 10px; /* Space inside the dropdown */
+    font-size: 16px; /* Font size for the options */
+    border: 1px solid #ccc; /* Border for the dropdown */
+    border-radius: 4px; /* Rounded corners */
+    background-color: white; /* Background color for dropdown */
+    appearance: none; /* Remove default dropdown arrow */
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"%3E%3Cpolygon points="0,0 10,10 20,0" fill="gray" /%3E%3C/svg%3E'); /* Custom dropdown arrow */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: right 10px center; /* Position arrow */
+    background-size: 10px; /* Size of the arrow */
+}
+
+/* Optional: Add hover effect */
+select:hover {
+    border-color: #888; /* Change border color on hover */
+}
